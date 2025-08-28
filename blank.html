@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article + Aside</title>
+    <style>
+        .wrapper {
+            display: flex;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        article {
+            flex: 2;
+            /* makes article stretch */
+            background: #ddd;
+            /* just so you can see it */
+            margin: 0;
+            padding: 10px;
+        }
+
+        aside {
+            flex: 1;
+            /* takes less space */
+            background: #65dd89;
+            margin: 0;
+            padding: 10px;
+        }
+
+        /* Responsive stack on small screens */
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <article>
+            <h2>Article Section</h2>
+            <p>This is the article. It stretches to fill the remaining space.</p>
+        </article>
+        <aside>
+            <h2>Aside Section</h2>
+            <p>This is the aside on the right.</p>
+        </aside>
+    </div>
+</body>
+
+</html>

@@ -17,7 +17,6 @@ Please ensure that you having the following installed:
  - Node.js
  - npm (this should come with Node.js)
 
---
 
 ## Installation
 
